@@ -36,7 +36,7 @@ docker run -it --rm --name rdiffweb-test \
     -e EMAIL_SENDER="sender@example.com" \
     -e EMAIL_USERNAME="sender@example.com" \
     -e EMAIL_PASSWORD="P4sswOrD" \
-    registre.waazaa.fr/rdiff-backup-rdiffweb:latest
+    waazaafr/rdiff-backup-rdiffweb:latest
 ```
 
 
@@ -46,7 +46,7 @@ docker run -it --rm --name rdiffweb-test \
 ```yaml
 services:
   rdiff-backup-rdiffweb:
-    image: registre.waazaa.fr/rdiff-backup-rdiffweb:latest
+    image: waazaafr/rdiff-backup-rdiffweb:latest
     container_name: rdiff-backup-rdiffweb
     environment:
       - TZ=Europe/Paris
